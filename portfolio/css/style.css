@@ -1,0 +1,121 @@
+/* BASIC STYLES */
+body {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 35px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Megrim', cursive;
+  font-weight: bold;
+}
+h1, h2 {
+  text-align: center;
+}
+
+/* NAVBAR MENU */
+.navbar{
+  background-color: #878bb7;
+  font-family: 'Megrim', cursive;
+  font-size: 20px;
+}
+.nav-pills {
+  margin-top: 10;
+}
+.nav > li > a,
+.nav > li > a:visited,
+.nav > li > a:active,
+.nav > li > a:focus {
+  /*display: flex;*/
+  font-size: 24px;
+  text-align: right;
+  color: #f7eed4;
+  opacity: 0.75;
+  background: none;
+}
+.nav > li > a:hover {
+  opacity: 1.00;
+  background: none;
+}
+
+/* NAVBAR BUTTON */
+.navbar-default .navbar-toggle {
+  border-color: #f7eed4;
+  border-width: 2px;
+  opacity: 0.75;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background: none;
+    opacity: 1.00;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f7eed4;
+}
+
+/* ALTERNATING COLORS AND PADDING */
+.about-me, .portfolio, .footer {
+  background-color: #f7eed4;
+  color: #878bb7;
+  padding: 40px 100px 40px 100px;
+}
+.resume, .contact {
+  background-color: #878bb7;
+  color: #f7eed4;
+  padding: 40px 100px 40px 100px;
+}
+.contact {
+  text-align: center;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.portfolio p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.portfolio h2 {
+  padding-bottom: 15px;
+}
+.center-pills {
+  display: inline-block;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+  .about-me, .portfolio, .resume, .contact, .footer {
+    padding: 40px 10px 40px 10px;
+  }
+  .vcenter {
+      display: inline;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) and (max-width : 767px ) {
+  .about-me, .portfolio, .resume, .contact, .footer {
+    padding: 40px 50px 40px 50px;
+  }
+  .vcenter {
+      display: inline;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .about-me, .portfolio, .resume, .contact, .footer {
+    padding: 40px 100px 40px 100px;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .about-me, .portfolio, .resume, .contact, .footer {
+    padding: 40px 200px 40px 200px;
+  }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .about-me, .portfolio, .resume, .contact, .footer {
+    padding: 40px 300px 40px 300px;
+  }
+}
