@@ -1,4 +1,10 @@
 body {
-  background: url("../images/headshot-2.jpg") no-repeat center center fixed;
+  background: url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
+  font-family: 'EB Garamond', serif;
+  color: white;
+}
+
+.main-title, .name {
+  font-family: 'Anton', sans-serif;
 }
