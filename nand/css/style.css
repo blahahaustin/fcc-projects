@@ -1,10 +1,72 @@
 body {
-  background: url("../images/background.jpg") no-repeat center center fixed;
+  background: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
   font-family: 'EB Garamond', serif;
   color: white;
 }
 
-.main-title, .name {
+
+/* MAIN PAGE TITLE */
+.main-title h1, .sub-header h1{
   font-family: 'Anton', sans-serif;
+}
+
+.main-title h1 {
+  font-size: 7vw;
+}
+
+.main-title {
+  padding-top: 25vh;
+}
+
+.sub-header h1 {
+  font-size: 35px;
+}
+
+/* MENU BAR */
+.nav-item {
+  font-family: 'Anton', sans-serif;
+  color: white;
+  opacity: 0.5;
+}
+
+.active {
+  opacity: 1.0;
+}
+
+.navbar button {
+  font-family: 'Anton', sans-serif;
+  color: white;
+
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+  .main-title img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-position: center -200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-title img {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-title img {
+    width: 150px;
+    height: 150px;
+  }
 }
