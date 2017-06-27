@@ -10,20 +10,31 @@ body {
 
 
 /* MAIN PAGE TITLE */
-.main-title h1, .sub-header h1{
+.main-title h1, .sub-header h1 {
   font-family: 'Anton', sans-serif;
+  color: white;
+  text-decoration: none;
 }
-
 .main-title h1 {
   font-size: 7vw;
 }
-
 .main-title {
   padding-top: 25vh;
 }
-
 .sub-header h1 {
   font-size: 35px;
+}
+.sub-header {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+/* REMOVE UNDERLINES FROM ALL LINKS */
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
 }
 
 /* MENU BAR */
@@ -32,15 +43,33 @@ body {
   color: white;
   opacity: 0.5;
 }
-
+.nav-item:hover {
+  color: white;
+  opacity: 1.0;
+}
 .active {
   opacity: 1.0;
 }
 
+/* MENU BAR COLLAPSED */
 .navbar button {
   font-family: 'Anton', sans-serif;
   color: white;
+}
 
+/* RESUME H2 AND TABLE */
+h2 {
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+}
+table, p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* CONTACT PAGE */
+#contact p, #contact a {
+  text-align: center;
 }
 
 /* MEDIA QUERIES */
@@ -50,20 +79,17 @@ body {
     height: 100px;
   }
 }
-
 @media (min-width: 768px) {
   body {
     background-position: center -200px;
   }
 }
-
 @media (min-width: 992px) {
   .main-title img {
     width: 125px;
     height: 125px;
   }
 }
-
 @media (min-width: 1200px) {
   .main-title img {
     width: 150px;
