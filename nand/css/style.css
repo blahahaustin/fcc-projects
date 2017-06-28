@@ -22,7 +22,7 @@ body {
   padding-top: 25vh;
 }
 .sub-header h1 {
-  font-size: 35px;
+  font-size: 30px;
 }
 .sub-header {
   padding-top: 20px;
@@ -51,6 +51,11 @@ a:active {
   opacity: 1.0;
 }
 
+/* HEADSHOTS */
+.single-shot {
+  padding-bottom: 30px;
+}
+
 /* MENU BAR COLLAPSED */
 .navbar button {
   font-family: 'Anton', sans-serif;
@@ -68,8 +73,9 @@ table, p {
 }
 
 /* CONTACT PAGE */
-#contact p, #contact a {
-  text-align: center;
+#contact a span {
+  color: white;
+  font-size: 25px;
 }
 
 /* MEDIA QUERIES */
@@ -78,10 +84,16 @@ table, p {
     width: 100px;
     height: 100px;
   }
+  .sub-header h1{
+    font-size: 35px;
+  }
+  #contact a span {
+    font-size: 30px;
+  }
 }
 @media (min-width: 768px) {
   body {
-    background-position: center -200px;
+    /*background-position: center -200px;*/
   }
 }
 @media (min-width: 992px) {
