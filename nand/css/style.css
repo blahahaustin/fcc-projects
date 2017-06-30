@@ -9,7 +9,7 @@ body {
 }
 
 body.landing-page {
-  background: url("../images/landing-bg.jpg");
+  background: url("../images/landing-bg-hq.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -28,7 +28,7 @@ body.landing-page {
   font-size: 7vw;
 }
 .main-title {
-  padding-top: 25vh;
+  padding-top: 10vh;
 }
 .sub-header h1 {
   font-size: 30px;
