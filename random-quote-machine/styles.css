@@ -7,3 +7,12 @@ body {
     background: #7c3434;
     margin-top: 50px;
 }
+
+#quote-title {
+    text-align: right;
+}
+
+button {
+    margin-top: 5px;
+    background: #b75f5f;
+}
