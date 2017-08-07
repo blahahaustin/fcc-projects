@@ -58,7 +58,8 @@ function getTweetIntent(quoteContent, quoteAuthor) {
     //Encode for URL.
     var webAddress = encodeURIComponent(quoteContent);
     webAddress += "+" + encodeURIComponent(quoteAuthor);
-    webAddress.replace(/'/, "%27");
+    webAddress.replace(/'|’|‘/g, "%27");
+    webAddress.replace(/“|”/g, "%22");
     console.log(webAddress);
 
     //Return the full web address for the tweet intent.
