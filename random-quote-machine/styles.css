@@ -30,7 +30,8 @@ body {
     transition: all .15s ease-in-out;
 }
 
-.btn:hover {
+.btn:hover,
+.btn.hover_effect {
     color: white;
     transform: scale(1.10);
 }

@@ -8,9 +8,14 @@ $(document).ready(function() {
 
     //Call the getQuote function when the button is clicked, and update link addresses.
     $('#get-quote').on('click', function() {
+
+        $(".well").fadeOut(500);
+
         getData().success(function(data) {
             manageData(data);
+            $(".well").fadeIn(500);
         });
+
     });
 });
 
@@ -49,7 +54,6 @@ function getQuoteAuthor(data) {
 function getTweetIntent(quoteContent, quoteAuthor) {
 
     //Encode for URL.
-    console.log(quoteContent);
     quoteContent = quoteContent.replace(/<span class="big-quote">"<\/span>/g, "\"");
     quoteContent = quoteContent.replace(/<strong>|<\/strong>/, "");
     quoteContent = quoteContent.replace(/[!'()*]/g, escape);
@@ -63,7 +67,6 @@ function getTweetIntent(quoteContent, quoteAuthor) {
     //webAddress.replace(/…/g, "%E2%80%A6");
     var webAddress = encodeURIComponent(quoteContent);
     webAddress += "+" + encodeURIComponent(quoteAuthor);
-    console.log(webAddress);
 
     //Return the full web address for the tweet intent.
     return "https://twitter.com/intent/tweet?text=" + webAddress;
