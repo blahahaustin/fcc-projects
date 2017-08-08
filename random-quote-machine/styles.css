@@ -1,6 +1,11 @@
 body {
     background: #efe2d7;
     color: white;
+    font-family: 'Merriweather', serif;
+}
+
+.big-quote {
+    font-size: 50px;
 }
 
 .well {
@@ -8,15 +13,24 @@ body {
     margin-top: 50px;
 }
 
+.fa-twitter {
+    font-size: 20px;
+}
+
 #quote-title {
     text-align: right;
 }
 
-button {
-    margin-top: 5px;
+.btn,
+.btn:visited,
+.btn:active {
+    margin-top: 20px;
     background: #b75f5f;
+    color: white;
+    transition: all .15s ease-in-out;
 }
 
-.fa-twitter {
-    font-size: 20px;
+.btn:hover {
+    color: white;
+    transform: scale(1.10);
 }
